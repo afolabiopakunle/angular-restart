@@ -6,7 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./course.component.css']
 })
 export class CourseComponent implements OnInit {
-
+  isLoggedIn = false;
+  likes = 121;
+  checkState() {
+    this.isLoggedIn = !this.isLoggedIn;
+    this.isLoggedIn ? this.likes++ : this.likes--
+  }
   constructor() { }
 
   ngOnInit(): void {

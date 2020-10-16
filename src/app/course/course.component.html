@@ -1,1 +1,3 @@
-<p>course works!</p>
+<p [style.color]="isLoggedIn ? 'navy' : 'black'">course works!</p>
+<p>{{ likes }}</p>
+<button class="btn btn-outline-primary" (click)="checkState()">Check State</button> <br /><br />
