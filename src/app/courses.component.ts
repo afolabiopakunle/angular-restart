@@ -5,7 +5,8 @@ import { StudentsService } from './students.service';
 
 @Component({
     selector: "courses",
-    template: `<h2>{{ getCoursesList() }}</h2>
+    template: `<div class="container">
+    <h2>{{ getCoursesList() }}</h2>
     <ul>
         <li *ngFor="let course of courses">{{ course }}</li>
     </ul>
@@ -15,7 +16,9 @@ import { StudentsService } from './students.service';
         {{ student }}
         </li>
     </ul>
+    <button class="btn btn-outline-primary">Save</button> <br /><br />
     <img [src]="imageURL"/>
+    </div>
     `
 })
 
